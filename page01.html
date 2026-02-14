@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>我的影视导航</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  /* 全局 */
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg,#0f172a,#1e293b);
+    color: #fff;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:40px 20px;
+  }
+
+  h1 {
+    font-size:2.5rem;
+    margin-bottom:30px;
+    text-align:center;
+    background: linear-gradient(90deg,#facc15,#22d3ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap:20px;
+    width:100%;
+    max-width:800px;
+  }
+
+  a.card {
+    background: #1e293b;
+    padding:20px;
+    border-radius:15px;
+    text-decoration:none;
+    color:white;
+    text-align:center;
+    transition: all 0.3s ease;
+    box-shadow:0 4px 15px rgba(0,0,0,0.3);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+  }
+
+  a.card:hover {
+    transform: translateY(-5px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+    background: linear-gradient(135deg,#0ea5e9,#facc15);
+    color:#0f172a;
+  }
+
+  a.card img {
+    width:50px;
+    height:50px;
+    margin-bottom:10px;
+  }
+
+  a.card span {
+    font-weight:600;
+    font-size:1.1rem;
+  }
+
+  footer {
+    margin-top:40px;
+    font-size:0.9rem;
+    color:#94a3b8;
+  }
+</style>
+</head>
+<body>
+
+<h1>🎬 我的影视导航</h1>
+
+<div class="grid">
+  <a class="card" href="https://你的emby地址" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/tv.png" alt="Emby">
+    <span>Emby</span>
+  </a>
+  <a class="card" href="https://www.douban.com" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/star.png" alt="豆瓣">
+    <span>豆瓣</span>
+  </a>
+  <a class="card" href="https://subhd.tv" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/document.png" alt="字幕站">
+    <span>字幕站</span>
+  </a>
+  <a class="card" href="https://t.me/你的频道" target="_blank">
+    <img src="https://img.icons8.com/ios-filled/100/ffffff/telegram-app.png" alt="Telegram">
+    <span>Telegram频道</span>
+  </a>
+</div>
+
+<footer>
+  &copy; 2026 你的名字. 版权所有
+</footer>
+
+</body>
+</html>
